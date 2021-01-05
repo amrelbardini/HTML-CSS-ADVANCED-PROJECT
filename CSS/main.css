@@ -145,10 +145,14 @@ select {
 }
 .header .search {
     width: 100%;
-    height: 120px;
+    height: auto;
     background-color:#fff;
     border-radius: 5px;
     margin-bottom:20px;
+    padding:20px;
+    -webkit-box-shadow: 5px 5px 5px 0px #eee;
+    -moz-box-shadow: 5px 5px 5px 0px #eee;
+    box-shadow: 5px 5px 5px 0px #eee;
 }
 .header .search .content {
     width:100%;
@@ -171,6 +175,7 @@ select {
     color:#fff;
     width:35%;
 }
+/* start slider settings */
 .header .slider {
     width:100%;
     height: 400px;
@@ -200,8 +205,112 @@ select {
 .header  .slider .carousel-indicators li{
     width: 15px;
     height: 15px;
-    border-radius: 50%;
-   
+    border-radius: 50%; 
 }
+/* start form settings */
+.header .sign-in {
+    background-color:#fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px 0px #eee;
+    -moz-box-shadow: 5px 5px 5px 0px #eee;
+    box-shadow: 5px 5px 5px 0px #eee;
+}
+.header  .form-heading .heading{
+  margin-top:15px;
+  margin-bottom:15px;
+  border-bottom: 1px solid #eee;
+}
+.header  .form-heading .heading h5 {
+    padding:10px;
+    font-weight: bold;
+    font-size:18px;
+}
+.header  .form-content {
+    padding:30px;
+}
+.header .form-content input[type="email"],
+.header .form-content input[type="password"] {
+    outline: none;
+    background-color:#f7f7f7;
+    border:none;
+    height: 50px;
+}
+.header  .form-content .btn-sign {
+    background-color:#2f9bc1;
+     width:100%;
+     height: 50px;
+     color:#fff;
+     font-weight: bold;
 
+}
+.header .sign-in .password {
+    padding-right:20px;
+    padding-bottom:20px;
+    text-align:right;
+
+}
+.header .sign-in .password a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+ /* start members column  */
+.header .members {
+    background-color:#fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px 0px #eee;
+    -moz-box-shadow: 5px 5px 5px 0px #eee;
+    box-shadow: 5px 5px 5px 0px #eee;
+    margin-bottom:20px;
+
+}
+.header .members .heading-container{
+    border-bottom:1px solid #eee;
+    padding:15px;
+}
+.header .members .heading-container h5 {
+    font-size:16px;
+    font-weight: bold;
+}
+.header .members .tags{
+    padding:15px;
+}
+.header .members .tags a {
+    width:100px;
+    background-color:#679710;
+    color:#fff;
+    padding:10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size:12px;
+    text-decoration: none;
+}
+.header .members .img-container,.header .members .info {
+    padding-left: 14px;
+}
+.header .members .info .name{
+    font-weight: bold;
+    font-size:14px;
+
+}
+.header .members .info .friends-no{
+    background-color:#e4ecf1;
+    padding:5px;
+    border-radius:5px;
+    font-size:12px;
+    font-weight: bold;
+    color:#8697b3;
+    max-width: 85px;
+
+}
+.header .members .member{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+.header .members .img-container img {
+    width:80px;
+    height: 80px;
+    border-radius:5px;
+}
 /*End landing page*/
