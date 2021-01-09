@@ -136,7 +136,6 @@ select {
 /*start landing page*/
 .header {
     background-color:#f0f0ed;
-    height: 2000px;
     width: 100%;
     padding-top:40px;
     padding-bottom:40px;
@@ -179,11 +178,13 @@ select {
 .header .slider {
     width:100%;
     height: 400px;
+    
 }
 .header  .slider .carousel-inner .img-container {
-    height: 400px;
     width: 100%;
     border-radius: 5px;
+    overflow: hidden;
+    height: 400px;
 }
 .header  .slider .carousel-inner .img-container img {
     width:100%;
@@ -214,6 +215,7 @@ select {
     -webkit-box-shadow: 5px 5px 5px 0px #eee;
     -moz-box-shadow: 5px 5px 5px 0px #eee;
     box-shadow: 5px 5px 5px 0px #eee;
+    margin-bottom:20px;
 }
 .header  .form-heading .heading{
   margin-top:15px;
@@ -254,6 +256,30 @@ select {
     color: #000000;
     font-weight: bold;
 }
+ /* start statistics cloumn  */
+ .header .statistics .statistics-content{
+     padding:20px;
+ }
+ .header .statistics .item {
+     color:#fff;
+     background-color:#c12f6c;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 5px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     
+ }
+ .header .statistics .item .info {
+     font-weight: bold;
+     text-align: left;
+ }
+ .header .statistics .item .number {
+    font-weight: bold;
+    font-size: 20px;
+}
+ /* end statistics column  */
  /* start members column  */
 .header .members {
     background-color:#fff;
@@ -313,4 +339,96 @@ select {
     height: 80px;
     border-radius:5px;
 }
+/* start section active memebers  */
+.header .members .img-box{
+    width:100%;
+    height: 100%;
+    padding-top:10px;
+    margin:20px;
+    padding-bottom:10px;
+}
+.header .members .img-box img {
+    width:70px;
+    height: 70px;
+    border-radius: 5px;
+}
+/* end section active members  */
+
+/* start calender properties  */
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
+
+.calender {
+  background-color:#fff;
+  width:100%;
+  height: 100%;
+  padding-bottom:70px;
+}
+
+.jzdbox1 {
+    width: 75%;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.jzdcal {
+  padding:0 10px 10px 10px; 
+  box-sizing:border-box!important; 
+}
+
+.jzdcalt {
+  font:18px 'Roboto'; 
+  font-weight:700; 
+  color:#f7f3eb; 
+  display:block; 
+  margin:18px 0 0 0; 
+  text-transform:uppercase; 
+  text-align:center; 
+  letter-spacing:1px;
+}
+
+.jzdcal span {
+  font:16px 'Roboto'; 
+  font-weight:400; 
+  color:#f7f3eb; 
+  text-align:center; 
+  width:42px; 
+  height:42px; 
+  display:inline-block; 
+  float:left; 
+  overflow:hidden; 
+  line-height:40px;
+}
+
+.jzdcal .jzdb:before {
+  opacity:0.3; 
+  content:'o';
+}
+
+.circle {
+  border:1px solid #f7f3eb; 
+  box-sizing:border-box!important; 
+  border-radius:200px!important;
+}
+
+span[data-title]:hover:after, 
+div[data-title]:hover:after {
+  font:11px 'Roboto'; 
+  font-weight:400; 
+  content:attr(data-title); 
+  position:absolute; 
+  margin:0 0 100px; 
+  background:#282423; 
+  border:1px solid #f7f3eb; 
+  color:#f7f3eb; 
+  padding:5px; 
+  z-index:9999; 
+  min-width:150px; 
+  max-width:150px;
+}
+/* end calender properties  */
 /*End landing page*/
