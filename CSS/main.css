@@ -208,6 +208,55 @@ select {
     height: 15px;
     border-radius: 50%; 
 }
+/* end slider settings  */
+/* start latest activity  */
+.header .latest-activity{
+    margin-top:30px;
+}
+.header .latest-activity .heading-container{
+    background-color:#ccc;
+}
+.header .latest-activity .content{
+    margin:20px;
+}
+.header .latest-activity .content .item{
+    border-bottom:1px solid #eee;
+    margin-top:20px;
+    min-height: 60px;
+    padding:10px;
+}
+.header .latest-activity .content .hidden{
+    display: none;
+}
+.header .latest-activity .content .item .load-more{
+    width:100%;
+    height: 100%;
+}
+.header .latest-activity .content .item .load-more .btn {
+    width:100%;
+    height: 45px;
+    background-color:#ccc !important;
+    font-weight: bold;
+    color:#333;
+    margin-bottom:20px;
+}
+.header .latest-activity .content .item .img-box{
+    width:150px;
+    height: 150px;
+    display: inline;
+}
+.header .latest-activity .content .item .img-box img {
+    min-width:110px;
+    min-height: 110px;
+}
+.header .latest-activity .content .item p {
+    font-weight: 500;
+    color:#333;
+    margin-bottom: 10px;
+
+}
+/* end latest activity */
+
 /* start form settings */
 .header .sign-in {
     background-color:#fff;
@@ -273,13 +322,50 @@ select {
  }
  .header .statistics .item .info {
      font-weight: bold;
-     text-align: left;
+     width: 130px;
+     display: flex;
+     justify-content: space-evenly;
+     font-size:16px;
+ }
+ .header .statistics .item .info .svg-inline--fa{
+     font-size: 22px;
+     margin-top:2px;
+     margin-right: 10px;
  }
  .header .statistics .item .number {
     font-weight: bold;
     font-size: 20px;
 }
  /* end statistics column  */
+ /* start who's online column  */
+ .whoIsOnline .members .content{
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+ }
+ .whoIsOnline .members .content p{
+     color:#333;
+ }
+ /* end who's online column  */
+ /* start recent replies  */
+ .recent .members .info{
+     padding:10px;
+     margin:10px;
+
+ }
+ .recent .members .info p{
+     color:#333;
+     font-size:16px;
+     font-weight: 400;
+
+
+ }
+ .recent .members .info p span {
+     font-size: 18px;
+     color:#ccc;
+
+ }
+ /* end recent replies  */
  /* start members column  */
 .header .members {
     background-color:#fff;
