@@ -1,5 +1,4 @@
-$(document).ready(function(){
-    
+$(document).ready(function(){  
    //load more button
     let loadMore_btn=$("#load_more");
     loadMore_btn.click(function(){

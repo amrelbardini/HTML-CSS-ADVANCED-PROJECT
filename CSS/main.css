@@ -241,13 +241,11 @@ select {
     margin-bottom:20px;
 }
 .header .latest-activity .content .item .img-box{
-    width:150px;
-    height: 150px;
-    display: inline;
+  height: 100%;
 }
 .header .latest-activity .content .item .img-box img {
-    min-width:110px;
-    min-height: 110px;
+    min-width:100px;
+    min-height: 100px;
 }
 .header .latest-activity .content .item p {
     font-weight: 500;
@@ -256,6 +254,30 @@ select {
 
 }
 /* end latest activity */
+/*start latest posts*/
+.header .latest-activity.posts .members .nav.nav-pills{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+} 
+.header .latest-activity.posts .members .nav-pills .nav-link{
+    width:40px;
+    height: 40px;
+    margin-left:10px;
+    text-align: center;
+    font-size: 11px;
+    border:0;
+    color:#ccc;
+    font-weight: bold;
+    background-color:#fbfbfb;
+}
+.header .latest-activity.posts .members .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color:#EEE;
+    color:#a29a9f;
+    
+   
+}
+/*end latest posts*/
 
 /* start form settings */
 .header .sign-in {
@@ -277,7 +299,7 @@ select {
     font-size:18px;
 }
 .header  .form-content {
-    padding:30px;
+    padding:10px;
 }
 .header .form-content input[type="email"],
 .header .form-content input[type="password"] {
@@ -289,7 +311,7 @@ select {
 .header  .form-content .btn-sign {
     background-color:#2f9bc1;
      width:100%;
-     height: 50px;
+     height: 40px;
      color:#fff;
      font-weight: bold;
 
@@ -312,7 +334,7 @@ select {
  .header .statistics .item {
      color:#fff;
      background-color:#c12f6c;
-     padding: 10px;
+     padding: 5px;
      margin: 10px;
      border-radius: 5px;
      display: flex;
@@ -385,13 +407,23 @@ select {
     font-weight: bold;
 }
 .header .members .tags{
-    padding:15px;
+    /* padding:5px;
+    min-height: 20px;
+    height: 80px; */
+}
+.header .members .tags ul{
+    padding:4px;
+}
+.header .members .tags ul li{
+    display: inline-block;
+    margin:2px;
+    padding: 6px;
 }
 .header .members .tags a {
     width:100px;
     background-color:#679710;
     color:#fff;
-    padding:10px;
+    padding:8px;
     border-radius: 5px;
     font-weight: bold;
     font-size:12px;
@@ -412,7 +444,7 @@ select {
     font-size:12px;
     font-weight: bold;
     color:#8697b3;
-    max-width: auto;
+    max-width: 120px;
 
 }
 .header .members .member{
@@ -423,15 +455,12 @@ select {
 .header .members .img-container img {
     width:80px;
     height: 80px;
-    border-radius:5px;
+    border-radius: 5px;
 }
 /* start section active memebers  */
 .header .members .img-box{
     width:100%;
     height: 100%;
-    padding-top:10px;
-    margin:20px;
-    padding-bottom:10px;
 }
 .header .members .img-box img {
     width:70px;
@@ -459,6 +488,8 @@ select {
     margin-bottom: 10px;
     margin: 0 auto;
     margin-top: 40px;
+    max-height: 280px;
+    padding:5px;
 }
 
 .jzdcal {
