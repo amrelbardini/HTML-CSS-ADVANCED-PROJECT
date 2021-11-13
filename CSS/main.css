@@ -406,11 +406,7 @@ select {
     font-size:16px;
     font-weight: bold;
 }
-.header .members .tags{
-    /* padding:5px;
-    min-height: 20px;
-    height: 80px; */
-}
+
 .header .members .tags ul{
     padding:4px;
 }

@@ -3,7 +3,7 @@ $(document).ready(function(){
     let loadMore_btn=$("#load_more");
     loadMore_btn.click(function(){
         let hiddenItem=$(".item.hidden");
-        hiddenItem.toggle();
+        hiddenItem.fadeToggle();
     });
 });
 
